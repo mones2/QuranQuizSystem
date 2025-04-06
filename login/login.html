@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إعداد الاختبار</h1>
+        <form id="setup-form">
+            <div class="form-group">
+                <label for="student-name">اسم الطالب:</label>
+                <input type="text" id="student-name" required>
+            </div>
+            <div class="form-group">
+                <label for="student-grade">الصف:</label>
+                <select id="student-grade" required>
+                    <option value="الثالث">الثالث</option>
+                    <option value="الرابع">الرابع</option>
+                    <option value="الخامس">الخامس</option>
+                    <option value="السادس">السادس</option>
+                    <option value="السابع">السابع</option>
+                    <option value="الثامن">الثامن</option>
+                    <option value="التاسع">التاسع</option>
+                    <option value="العاشر">العاشر</option>
+                    <option value="الأول الثانوي">الأول الثانوي</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="student-level">الصف:</label>
+                <select id="student-level" required>
+                    <option value="L1">سورة الحديد</option>
+                    <option value="L2">سورة الحديد و الانسان</option>
+                    <option value="L3">سورة غافر</option>
+                    <option value="L4">سورة النمل</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="teacher-password">كلمة مرور المعلم:</label>
+                <input type="password" id="teacher-password" required>
+            </div>
+            <div class="form-group">
+                <label for="start-time">وقت البدء:</label>
+                <input type="time" id="start-time" required>
+            </div>
+            <button type="submit">بدء العد التنازلي</button>
+        </form>
+        <div id="countdown"></div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
